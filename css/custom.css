@@ -35,4 +35,24 @@
 
 .nav-link:hover {
   color: rgb(211, 77, 77) !important;
+
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
+
+nav {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.bg-image {
+  height: 100vh
 }
