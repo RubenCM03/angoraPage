@@ -7,7 +7,7 @@
 .section-title .bg-text {
   font-size: 5rem;
   font-weight: 800;
-  color: rgba(0, 0, 0, 0.05);
+  color: rgba(42, 21, 21, 0.05);
   user-select: none;
   pointer-events: none;
   z-index: 1;
