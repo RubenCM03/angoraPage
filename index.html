@@ -4,22 +4,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
+    <title>Angora | Homepage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/custom.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+
 
 </head>
 
 <body>
-    <div class="card text-bg-dark">
-        <img src="img/background.jpg" class="card-img w-auto h-" alt="...">
-        <div class="card-img-overlay">
-            <nav class="navbar">
-                <li></li>
+    <div class="position-relative">
+        <div class="h-5 bg-image">
+            <img src="img/torre-eiffel.jpg" class="w-100 h-100 object-fit-cover" alt="Imagen de la Torre Eiffel">
+        </div>
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25"></div>
+        <div class="card-img-overlay d-flex flex-column justify-content-between">
+            <!-- NAVBAR INICIO -->
+            <nav class="navbar navbar-expand-lg border-bottom border-white border-opacity-25 pb-4 pt-4">
+                <div class="container d-flex justify-content-between align-items-center">
+                    <a class="navbar-brand d-flex align-items-center text-light fw-bold nav-link" href="/">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="me-2">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M10 4m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z" />
+                            <path d="M3 17m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z" />
+                            <path d="M17 17m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z" />
+                            <path d="M6.5 17.1l5 -9.1" />
+                            <path d="M17.5 17.1l-5 -9.1" />
+                            <path d="M7 19l10 0" />
+                        </svg>
+                        ANGORA
+                    </a>
+                    <div class="collapse navbar-collapse justify-content-center">
+                        <ul class="navbar-nav mx-auto me-5 mb-2 mb-lg-0 gap-2">
+                            <li class="nav-item">
+                                <a class="nav-link text-light fw-semibold" aria-current="page" href="/">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light fw-semibold" aria-current="page" href="/about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light fw-semibold" aria-current="page" href="/team.html">Team</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light fw-semibold" aria-current="page"
+                                    href="/projects">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light fw-semibold" aria-current="page"
+                                    href="/services">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light fw-semibold" aria-current="page" href="/store">Store</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light fw-semibold" aria-current="page"
+                                    href="/contact">Contact</a>
+                            </li>
+
+                        </ul>
+                        <ul class="navbar-nav d-flex flex-row gap-1">
+                            <li class="nav-item w-25">
+                                <a class="nav-link text-light" href="https://twitter.com" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="icon icon-tabler icon-tabler-brand-x">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+                                        <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="nav-item w-25">
+                                <a class="nav-link text-light" href="https://facebook.com" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="currentColor" class="icon icon-tabler icon-tabler-brand-facebook">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path
+                                            d="M18 2a1 1 0 0 1 .993 .883l.007 .117v4a1 1 0 0 1 -.883 .993l-.117 .007h-3v1h3a1 1 0 0 1 .991 1.131l-.02 .112l-1 4a1 1 0 0 1 -.858 .75l-.113 .007h-2v6a1 1 0 0 1 -.883 .993l-.117 .007h-4a1 1 0 0 1 -.993 -.883l-.007 -.117v-6h-2a1 1 0 0 1 -.993 -.883l-.007 -.117v-4a1 1 0 0 1 .883 -.993l.117 -.007h2v-1a6 6 0 0 1 5.775 -5.996l.225 -.004h3z" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="https://instagram.com" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="icon icon-tabler icon-tabler-brand-instagram">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path
+                                            d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                                        <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                                        <path d="M16.5 7.5v.01" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-            <p class="card-text"><small>Last updated 3 mins ago</small></p>
+            <!-- NAVBAR FIN!! -->
+            <div class="d-flex h-100 align-items-center justify-content-center ps-5 ms-5">
+                <h2 class="card-title display-3 text-light fw-bold  text-center opacity-75 ps-5 ms-5">
+                    We build <br>great brands.
+                </h2>
+            </div>
         </div>
     </div>
 </body>
