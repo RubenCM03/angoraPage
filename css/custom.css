@@ -70,3 +70,16 @@ p {
   transform: scale(1.5);
   transform-origin: top;
 }
+
+.project-button {
+  border: 2px solid transparent;
+  border-radius: 9999px;
+  transition: border 0.3s;
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-button:hover {
+  border: 2px solid #F48A8A;
+  color: #F48A8A !important;
+}
