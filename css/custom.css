@@ -70,3 +70,14 @@ p {
   transform: scale(1.5);
   transform-origin: top;
 }
+
+/* Height of mission backgound image forest*/
+.mission-height {
+      height: 900px;
+    }
+
+@media (min-width: 768px) {
+  .mission-height {
+    height: 700px;
+  }
+}
