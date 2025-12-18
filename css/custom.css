@@ -71,10 +71,10 @@ p {
   transform-origin: top;
 }
 
-/* Height of mission backgound image forest*/
+
 .mission-height {
-      height: 900px;
-    }
+  height: 900px;
+}
 
 @media (min-width: 768px) {
   .mission-height {
@@ -82,22 +82,34 @@ p {
   }
 }
 
-/* overlay of team images */
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(250, 128, 114, 0.7);
-    opacity: 0;
-    transition: opacity 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(250, 128, 114, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .position-relative:hover .overlay {
-    opacity: 1;
+  opacity: 1;
 }
 
 .overlay i {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.project-button {
+  border: 2px solid transparent;
+  border-radius: 9999px;
+  transition: border 0.3s;
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-button:hover {
+  border: 2px solid #F48A8A;
+  color: #F48A8A !important;
 }
