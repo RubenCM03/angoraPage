@@ -71,10 +71,10 @@ p {
   transform-origin: top;
 }
 
-/* Height of mission backgound image forest*/
+
 .mission-height {
-      height: 900px;
-    }
+  height: 900px;
+}
 
 @media (min-width: 768px) {
   .mission-height {
@@ -82,20 +82,19 @@ p {
   }
 }
 
-/* overlay of team images */
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(250, 128, 114, 0.7);
-    opacity: 0;
-    transition: opacity 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(250, 128, 114, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .position-relative:hover .overlay {
-    opacity: 1;
+  opacity: 1;
 }
 
 .overlay i {
@@ -121,4 +120,59 @@ p {
 .icon-lg {
   width: 80px;
   height: 80px;
+}
+
+.project-button {
+  border: 2px solid transparent;
+  border-radius: 9999px;
+  transition: border 0.3s;
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-button:hover {
+  border: 2px solid #F48A8A;
+  color: #F48A8A !important;
+}
+
+
+
+.project-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-overlay {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.project-item:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-box {
+  background: rgba(255, 255, 255, 0.95);
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #000;
+}
+
+.btn-red {
+  background-color: #F05B5B;
+  color: white;
+  padding: 10px 20px;
+}
+
+.btn-red:hover {
+  background-color: #D11414;
+  color: white;
 }
