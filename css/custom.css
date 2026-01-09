@@ -144,3 +144,14 @@ p {
   font-weight: 600;
   color: #000;
 }
+
+.btn-red {
+  background-color: #F05B5B;
+  color: white;
+  padding: 10px 20px;
+}
+
+.btn-red:hover {
+  background-color: #D11414;
+  color: white;
+}
