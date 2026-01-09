@@ -101,27 +101,6 @@ p {
     font-size: 1.5rem;
 }
 
-/* Service icons sizes */
-.service-icon-sm {
-  width: 35px;
-  height: 35px;
-}
-
-.service-icon-md {
-  width: 40px;
-  height: 40px;
-}
-
-.service-icon-lg {
-  width: 45px;
-  height: 45px;
-}
-
-.icon-lg {
-  width: 80px;
-  height: 80px;
-}
-
 .project-button {
   border: 2px solid transparent;
   border-radius: 9999px;
@@ -134,8 +113,6 @@ p {
   border: 2px solid #F48A8A;
   color: #F48A8A !important;
 }
-
-
 
 .project-item {
   position: relative;
@@ -175,4 +152,31 @@ p {
 .btn-red:hover {
   background-color: #D11414;
   color: white;
+}
+
+
+/* Service icons sizes */
+.service-icon-sm {
+  width: 35px;
+  height: 35px;
+}
+
+.service-icon-md {
+  width: 40px;
+  height: 40px;
+}
+
+.service-icon-lg {
+  width: 45px;
+  height: 45px;
+}
+
+.icon-lg {
+  width: 80px;
+  height: 80px;
+}
+
+.cover-img {
+  height: 400px;
+  filter: brightness(50%)
 }
