@@ -98,7 +98,7 @@ p {
 }
 
 .overlay i {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .project-button {
@@ -179,4 +179,14 @@ p {
 .cover-img {
   height: 400px;
   filter: brightness(50%)
+}
+
+.footer-map {
+  background-image: url("../img/worldmap.webp");
+  background-repeat: repeat-x;
+  background-position: top center;
+  background-size: auto;
+  background-attachment: scroll;
+  padding-top: 50px;
+  opacity: 50%;
 }
