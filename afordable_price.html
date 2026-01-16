@@ -10,96 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="css/custom.css" rel="stylesheet" />
-    <style>
-        .pricing-section {
-            height: 2000px;
-            background-image: url("./img/fondo-portatil.jpg");
-            background-size: cover;
-            background-position: center;
-        }
-
-        @media (min-width: 576px) {
-            .pricing-section {
-                height: 1350px;
-            }
-        }
-
-        @media (min-width: 992px) {
-            .pricing-section {
-                height: 900px;
-            }
-        }
-
-        .pricing-overlay {
-            position: absolute;
-            inset: 0;
-            background-color: rgba(0, 0, 0, 0.133);
-        }
-
-        .price .symbol {
-            bottom: 36px;
-            position: relative;
-        }
-
-        .title-medium {
-            font-size: 1.5rem !important;
-            line-height: 2.25rem !important;
-        }
-
-        .title-extra-large-5 {
-            font-size: 5rem !important;
-            line-height: 5rem !important;
-        }
-
-        /* --- EFECTO RIBBON JUSTO --- */
-        .ribbon-wrapper {
-            width: 100px;
-            height: 100px;
-            overflow: hidden;
-            position: absolute;
-            top: -5px;
-            left: -5px;
-            z-index: 10;
-        }
-
-        .ribbon-text {
-            text-align: center;
-            transform: rotate(-45deg);
-            position: relative;
-            padding: 7px 0;
-            left: -29px;
-            top: 24px;
-            width: 150px;
-            background-color: #212529;
-            color: #dfdfdf;
-            font-size: 0.7rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
-            letter-spacing: 1px;
-        }
-
-        /* Los triángulos que hacen el efecto de "envolver" */
-        .ribbon-wrapper::before,
-        .ribbon-wrapper::after {
-            content: "";
-            border-top: 5px solid #000;
-            border-left: 5px solid transparent;
-            position: absolute;
-            z-index: -1;
-        }
-
-        .ribbon-wrapper::before {
-            top: 0;
-            right: 0;
-        }
-
-        .ribbon-wrapper::after {
-            bottom: 0;
-            left: 0;
-            transform: rotate(180deg);
-        }
-    </style>
 </head>
 
 <body>
@@ -121,7 +31,7 @@
 
             <div class="row justify-content-center g-4">
                 <div class="col-lg-4 col-sm-6 col-12 position-relative">
-                    <div class="card border-0 text-dark text-center h-100">
+                    <div class="card price-card border-0 text-dark text-center h-100 mx-4 mx-sm-0">
                         <div class="card-header border-0 py-4 bg-light">
                             <h5 class="text-uppercase fw-bold">Basic</h5>
                             <span class="price d-block mt-2">
@@ -145,12 +55,12 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-sm-6 col-12">
+                <div class="col-lg-4 col-sm-6 col-12 professional-card position-relative">
                     <div class="position-relative h-100">
-                        <div class="ribbon-wrapper">
+                        <div class="ribbon-wrapper mx-4 mx-sm-0">
                             <div class="ribbon-text">Popular</div>
                         </div>
-                        <div class="card border-0 text-dark text-center h-100 shadow-lg">
+                        <div class="card price-card border-0 text-dark text-center h-100 shadow-lg mx-4 mx-sm-0">
                             <div class="card-header border-0 py-4 bg-light">
                                 <h5 class="text-uppercase fw-bold">Professional</h5>
                                 <span class="price d-block mt-2">
@@ -176,7 +86,7 @@
                 </div>
 
                 <div class="col-lg-4 col-sm-6 col-12 position-relative">
-                    <div class="card border-0 text-dark text-center h-100">
+                    <div class="card price-card border-0 text-dark text-center h-100 mx-4 mx-sm-0">
                         <div class="card-header border-0 py-4 bg-light">
                             <h5 class="text-uppercase fw-bold">Business</h5>
                             <span class="price d-block mt-2">
