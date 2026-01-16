@@ -9,6 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="css/custom.css" rel="stylesheet" />
     <style>
         .pricing-section {
             height: 2000px;
@@ -17,8 +18,17 @@
             background-position: center;
         }
 
-        @media (min-width: 576px) { .pricing-section { height: 1350px; } }
-        @media (min-width: 768px) { .pricing-section { height: 1000px; } }
+        @media (min-width: 576px) {
+            .pricing-section {
+                height: 1350px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .pricing-section {
+                height: 900px;
+            }
+        }
 
         .pricing-overlay {
             position: absolute;
@@ -61,11 +71,11 @@
             top: 24px;
             width: 150px;
             background-color: #212529;
-            color: #fff;
+            color: #dfdfdf;
             font-size: 0.7rem;
-            font-weight: 800;
+            font-weight: 600;
             text-transform: uppercase;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
             letter-spacing: 1px;
         }
 
@@ -79,8 +89,16 @@
             z-index: -1;
         }
 
-        .ribbon-wrapper::before { top: 0; right: 0; }
-        .ribbon-wrapper::after { bottom: 0; left: 0; transform: rotate(180deg); }
+        .ribbon-wrapper::before {
+            top: 0;
+            right: 0;
+        }
+
+        .ribbon-wrapper::after {
+            bottom: 0;
+            left: 0;
+            transform: rotate(180deg);
+        }
     </style>
 </head>
 
@@ -92,15 +110,17 @@
             <div class="container position-relative z-1 pt-5">
                 <div class="text-center position-relative d-inline-block mb-5 mt-5 section-title w-100">
                     <h2 class="fw-bold position-relative z-2">Affordable Price</h2>
-                    <div class="underline bg-light mx-auto mt-3" style="width: 50px; height: 2px;"></div>
-                    <p class="text-center fs-5 text-white fw-light mb-2 mt-3 px-md-5 col-md-8 mx-auto">
-                        Morbi nec massa ac ligula pulvinar congue. Nunc ut sollicitudin nibh.
+                    <span class="position-absolute top-0 start-50 translate-middle bg-text-light">A</span>
+                    <div class="underline bg-light mx-auto mt-3"></div>
+                    <p class="text-center fs-5 text-light fw-light mb-2 mt-3 px-md-5 mx-lg-5">
+                        Morbi nec massa ac ligula pulvinar congue. Nunc ut sollicitudin nibh. Etiam sem nibh, auctor
+                        sed, pharetra congue tellus majesuada dolor.
                     </p>
                 </div>
             </div>
 
             <div class="row justify-content-center g-4">
-                <div class="col-md-4 col-sm-6 col-12 position-relative">
+                <div class="col-lg-4 col-sm-6 col-12 position-relative">
                     <div class="card border-0 text-dark text-center h-100">
                         <div class="card-header border-0 py-4 bg-light">
                             <h5 class="text-uppercase fw-bold">Basic</h5>
@@ -108,12 +128,14 @@
                                 <span class="symbol title-medium fw-bold">$</span>
                                 <span class="title-extra-large-5 fw-semibold">19</span>
                             </span>
-                            <span class="text-secondary small">Month</span>
+                            <span class="text-secondary small text-uppercase">Month</span>
                         </div>
                         <div class="card-body py-4">
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">100 MB Disk Space</li>
                                 <li class="list-group-item">2 Subdomains</li>
+                                <li class="list-group-item">5 Email Accounts</li>
+                                <li class="list-group-item">Webmail Support</li>
                                 <li class="list-group-item">Customer Support 24/7</li>
                             </ul>
                         </div>
@@ -123,7 +145,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 col-sm-6 col-12">
+                <div class="col-lg-4 col-sm-6 col-12">
                     <div class="position-relative h-100">
                         <div class="ribbon-wrapper">
                             <div class="ribbon-text">Popular</div>
@@ -135,12 +157,14 @@
                                     <span class="symbol title-medium fw-bold">$</span>
                                     <span class="title-extra-large-5 fw-semibold">35</span>
                                 </span>
-                                <span class="text-secondary small">Month</span>
+                                <span class="text-secondary small text-uppercase">Month</span>
                             </div>
                             <div class="card-body py-4">
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item">100 MB Disk Space</li>
                                     <li class="list-group-item">8 Subdomains</li>
+                                    <li class="list-group-item">10 Email Accounts</li>
+                                    <li class="list-group-item">Webmail Support</li>
                                     <li class="list-group-item">Customer Support 24/7</li>
                                 </ul>
                             </div>
@@ -151,7 +175,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 col-sm-6 col-12 position-relative">
+                <div class="col-lg-4 col-sm-6 col-12 position-relative">
                     <div class="card border-0 text-dark text-center h-100">
                         <div class="card-header border-0 py-4 bg-light">
                             <h5 class="text-uppercase fw-bold">Business</h5>
@@ -159,12 +183,14 @@
                                 <span class="symbol title-medium fw-bold">$</span>
                                 <span class="title-extra-large-5 fw-semibold">89</span>
                             </span>
-                            <span class="text-secondary small">Month</span>
+                            <span class="text-secondary small text-uppercase">Month</span>
                         </div>
                         <div class="card-body py-4">
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">1000 MB Disk Space</li>
-                                <li class="list-group-item">Unlimited Email</li>
+                                <li class="list-group-item">Unlimited Subdomains</li>
+                                <li class="list-group-item">Unlimited Email Accounts</li>
+                                <li class="list-group-item">Webmail Support</li>
                                 <li class="list-group-item">Customer Support 24/7</li>
                             </ul>
                         </div>
@@ -177,4 +203,5 @@
         </div>
     </section>
 </body>
+
 </html>
