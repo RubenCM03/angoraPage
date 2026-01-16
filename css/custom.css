@@ -298,8 +298,25 @@ p {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* --- Logos section --- */
+/* Altura para móviles (pequeña) */
 .img-logo-size {
-    max-width: auto;
-    height: 250px;
+    height: 80px; 
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    transition: all 0.3s ease; /* Opcional: para que el cambio sea suave */
+}
+
+/* Altura para tablets (mediana) */
+@media (min-width: 768px) {
+    .img-logo-size {
+        height: 130px;
+    }
+}
+
+/* Altura para ordenadores (grande) */
+@media (min-width: 1200px) {
+    .img-logo-size {
+        height: 200px;
+    }
 }
