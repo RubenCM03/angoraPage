@@ -297,3 +297,9 @@ p {
 .price-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* --- Logos section --- */
+.img-logo-size {
+    max-width: auto;
+    height: 250px;
+}
