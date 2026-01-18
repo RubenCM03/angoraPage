@@ -107,7 +107,7 @@ p {
 }
 
 .overlay i {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .project-button {
@@ -193,130 +193,213 @@ p {
 /* --- SECCIÓN AFFORDABLE PRICE --- */
 /* --- Background image and overlay --- */
 .pricing-section {
-    height: 2000px;
-    background-image: url("../img/fondo-portatil.jpg");
-    background-size: cover;
-    background-position: center;
+  height: 2000px;
+  background-image: url("../img/fondo-portatil.jpg");
+  background-size: cover;
+  background-position: center;
 }
+
 @media (min-width: 576px) {
-    .pricing-section {
-        height: 1350px;
-    }
+  .pricing-section {
+    height: 1350px;
+  }
 }
+
 @media (min-width: 992px) {
-    .pricing-section {
-        height: 900px;
-    }
+  .pricing-section {
+    height: 900px;
+  }
 }
+
 .pricing-overlay {
-    position: absolute;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.133);
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.133);
 }
 
 /* --- Price card styles --- */
 .price .symbol {
-    bottom: 36px;
-    position: relative;
+  bottom: 36px;
+  position: relative;
 }
+
 .title-medium {
-    font-size: 1.5rem !important;
-    line-height: 2.25rem !important;
+  font-size: 1.5rem !important;
+  line-height: 2.25rem !important;
 }
+
 .title-extra-large-5 {
-    font-size: 5rem !important;
-    line-height: 5rem !important;
+  font-size: 5rem !important;
+  line-height: 5rem !important;
 }
 
 /* --- Ribbon effect --- */
 .ribbon-wrapper {
-    width: 100px;
-    height: 100px;
-    overflow: hidden;
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    z-index: 10;
-    transition: transform 0.3s ease;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  z-index: 10;
+  transition: transform 0.3s ease;
 }
+
 .ribbon-text {
-    text-align: center;
-    transform: rotate(-45deg);
-    position: relative;
-    padding: 7px 0;
-    left: -29px;
-    top: 24px;
-    width: 150px;
-    background-color: #212529;
-    color: #dfdfdf;
-    font-size: 0.7rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
-    letter-spacing: 1px;
+  text-align: center;
+  transform: rotate(-45deg);
+  position: relative;
+  padding: 7px 0;
+  left: -29px;
+  top: 24px;
+  width: 150px;
+  background-color: #212529;
+  color: #dfdfdf;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  letter-spacing: 1px;
 }
+
 .ribbon-wrapper::before,
 .ribbon-wrapper::after {
-    content: "";
-    border-top: 5px solid #000;
-    border-left: 5px solid transparent;
-    position: absolute;
-    z-index: -1;
+  content: "";
+  border-top: 5px solid #000;
+  border-left: 5px solid transparent;
+  position: absolute;
+  z-index: -1;
 }
+
 .ribbon-wrapper::before {
-    top: 0;
-    right: 0;
+  top: 0;
+  right: 0;
 }
+
 .ribbon-wrapper::after {
-    bottom: 0;
-    left: 0;
-    transform: rotate(180deg);
+  bottom: 0;
+  left: 0;
+  transform: rotate(180deg);
 }
 
 /* --- Hover effect --- */
-.price-card .ribbon-wrapper{
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+.price-card .ribbon-wrapper {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Smooth transition */
 }
+
 .price-card:hover {
-    transform: scale(1.05);
-    z-index: 5;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2) !important;
+  transform: scale(1.05);
+  z-index: 5;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2) !important;
 }
+
 .professional-card:hover .ribbon-wrapper {
-    transform: scale(1.16);
+  transform: scale(1.16);
 }
+
 .price-card:hover .card-header {
-    background-color: rgb(238, 106, 92) !important;
-    color: white !important;
-    transition: background-color 0.3s ease;
+  background-color: rgb(238, 106, 92) !important;
+  color: white !important;
+  transition: background-color 0.3s ease;
 }
+
 .price-card:hover .card-header .price,
 .price-card:hover .card-header .text-secondary {
-    color: white !important;
+  color: white !important;
 }
+
 .price-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Altura para móviles (pequeña) */
 .img-logo-size {
-    height: 80px; 
-    width: auto;
-    max-width: 100%;
-    object-fit: contain;
-    transition: all 0.3s ease; /* Opcional: para que el cambio sea suave */
+  height: 80px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  transition: all 0.3s ease;
+  /* Opcional: para que el cambio sea suave */
 }
 
 /* Altura para tablets (mediana) */
 @media (min-width: 768px) {
-    .img-logo-size {
-        height: 130px;
-    }
+  .img-logo-size {
+    height: 130px;
+  }
 }
 
 /* Altura para ordenadores (grande) */
 @media (min-width: 1200px) {
-    .img-logo-size {
-        height: 200px;
-    }
+  .img-logo-size {
+    height: 200px;
+  }
+}
+
+.bg-footer {
+  background-color: #1a1a1a;
+}
+
+.bg-footer-dark {
+  background-color: #111111;
+}
+
+.footer-map {
+  position: relative;
+  background-image: url("../img/worldmap.webp");
+  background-position: center;
+  padding: 60px 0;
+}
+
+.footer-map::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(26, 26, 26, 0.85);
+  z-index: 1;
+}
+
+.footer-map>.container,
+.footer-map>.text-center {
+  position: relative;
+  z-index: 2;
+}
+
+.footer-link {
+  color: #999;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 0.95rem;
+}
+
+.footer-link:hover {
+  color: #fff;
+}
+
+.text-secondary {
+  color: #999 !important;
+}
+
+.tag-badge {
+  border: 1px solid #444;
+  color: #999;
+  padding: 4px 12px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.tag-badge:hover {
+  border-color: #fff;
+  color: #fff;
+}
+
+h5 {
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
 }
