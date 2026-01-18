@@ -29,19 +29,6 @@
   z-index: 2;
 }
 
-
-.mx-20 {
-  margin-left: 20rem !important;
-  margin-right: 20rem !important;
-  margin-top: 10rem !important;
-  margin-bottom: 10rem !important;
-}
-
-.px-10 {
-  padding-left: 15rem !important;
-  padding-right: 15rem !important;
-}
-
 .nav-link:hover {
   color: #d34d4d !important;
 
@@ -190,7 +177,7 @@ p {
   filter: brightness(50%)
 }
 
-/* --- SECCIÓN AFFORDABLE PRICE --- */
+/* --- AFFORDABLE PRICE SECTION --- */
 /* --- Background image and overlay --- */
 .pricing-section {
   height: 2000px;
@@ -201,7 +188,7 @@ p {
 
 @media (min-width: 576px) {
   .pricing-section {
-    height: 1350px;
+    height: 1400px;
   }
 }
 
@@ -285,7 +272,6 @@ p {
 /* --- Hover effect --- */
 .price-card .ribbon-wrapper {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  /* Smooth transition */
 }
 
 .price-card:hover {
@@ -299,7 +285,7 @@ p {
 }
 
 .price-card:hover .card-header {
-  background-color: rgb(238, 106, 92) !important;
+  background-color: #e75c5c !important;
   color: white !important;
   transition: background-color 0.3s ease;
 }
@@ -313,30 +299,30 @@ p {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Altura para móviles (pequeña) */
+
+/* --- LOGO SIZE --- */
 .img-logo-size {
   height: 80px;
   width: auto;
   max-width: 100%;
   object-fit: contain;
   transition: all 0.3s ease;
-  /* Opcional: para que el cambio sea suave */
 }
 
-/* Altura para tablets (mediana) */
 @media (min-width: 768px) {
   .img-logo-size {
-    height: 130px;
+    height: 120px;
   }
 }
 
-/* Altura para ordenadores (grande) */
 @media (min-width: 1200px) {
   .img-logo-size {
     height: 200px;
   }
 }
 
+
+/* --- FOOTER STYLES --- */
 .bg-footer {
   background-color: #1a1a1a;
 }
